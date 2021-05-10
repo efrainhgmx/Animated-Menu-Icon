@@ -8,15 +8,15 @@
     user-select: none;
 }
 
-.menu a {
+ .menu a {
     text-decoration: none;
     color: #232323;
     transition:  color 0.3s ease;
-}
+} 
 
-.menu a:hover {
+ .menu a:hover {
     color: tomato;
-}
+} 
 
 .menu input {
     display: block;
@@ -29,7 +29,7 @@
     opacity: 0;
     z-index: 2;
     -webkit-touch-callout: none;
-}
+} 
 
 .menu span {
     display: block;
@@ -53,23 +53,26 @@
     transform-origin: 0% 100%;
 }
 
+/* Menu transition */
 .menu input:checked ~ span {
     opacity: 1;
     transform: rotate(45deg) translate(-2px, -1px);
     background: #1d3557;
-}
+} 
 
-.menu input:checked ~ span:nth-last-child(3) {
+ .menu input:checked ~ span:nth-last-child(3) {
     opacity: 0;
     transform: rotate(0deg) scale(0.2, 0.2);
-}
+} 
 
-.menu input:checked ~ span:nth-last-child(2) {
+ .menu input:checked ~ span:nth-last-child(2) {
     transform: rotate(-45deg) translate(0, -1px);
-}
+} 
 
 
-.menu-list {
+
+
+ .menu-list {
     position: absolute;
     width: 300px;
     margin: -100px 0 0 -50px;
@@ -86,8 +89,8 @@
 .menu-list li {
     padding: 10px 0;
     font-size: 22px;
-}
+} 
 
 .menu input:checked ~ ul {
     transform: none;
-}
+}  
